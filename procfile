@@ -1,0 +1,1 @@
+web: gunicorn hogehoge.wsgi
