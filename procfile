@@ -1,1 +1,1 @@
-web: gunicorn--pythonpath hogehoge hogehoge.wsgi
+web: gunicorn django_docker_heroku_first.wsgi

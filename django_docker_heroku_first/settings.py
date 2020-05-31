@@ -135,7 +135,7 @@ STATIC_URL = '/static/'
 #DEBUG = True
 DEBUG = False
 try:
-    from .local_settings import *
+    from .settings_dev import *
 except ImportError:
     pass
 if not DEBUG:
