@@ -80,22 +80,16 @@ WSGI_APPLICATION = 'django_docker_heroku_first.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432
     }
 }
 
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres_hoge',
-        'USER': 'postgres_hoge',
-        'HOST': 'db',
-        'PORT': 5433
-    }
-}
-"""
+
+
 
 
 # Password validation
@@ -138,7 +132,7 @@ STATIC_URL = '/static/'
 
 
 
-
+#DEBUG = True
 DEBUG = False
 try:
     from .local_settings import *
@@ -147,3 +141,4 @@ except ImportError:
 if not DEBUG:
     import django_heroku
     django_heroku.settings(locals())
+
