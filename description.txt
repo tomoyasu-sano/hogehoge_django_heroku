@@ -1,0 +1,3 @@
+how to deply to heroku
+
+restart heroku ps:scale web=1 --app django-docker-hogehoge-ver1  
