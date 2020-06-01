@@ -30,7 +30,9 @@ SECRET_KEY = 'r+si17=fb1-^-##ms$+t#u-sb*ipbj^w&jen3bm2$2cjl8tx^p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+#####これは危ない
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
