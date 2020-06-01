@@ -32,7 +32,7 @@ DEBUG = True
 
 
 #####これは危ない
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
